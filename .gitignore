@@ -21,6 +21,7 @@ hs_err_pid*
 
 # IntelliJ
 /.idea
+!/.idea/runConfigurations/
 /out
 
 # Eclipse
