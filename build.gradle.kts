@@ -119,6 +119,14 @@ tasksWithIncludedBuild("spoofax3.example.root") {
   registerDelegateTask("runSdf3Cli", it, ":sdf3.cli:run")
   registerDelegateTask("runSdf3Eclipse", it, ":sdf3.eclipse:runEclipse")
   registerDelegateTask("runSdf3IntelliJ", it, ":sdf3.intellij:runIde")
+
+  registerDelegateTask("runMiniSdfEclipse", it, ":minisdf.eclipse:runEclipse")
+  registerDelegateTask("runMiniStrEclipse", it, ":ministr.eclipse:runEclipse")
+  registerDelegateTask("runMultilangEclipse", it, ":multilang.eclipse:runEclipse")
+  registerDelegateTask("newYorkEclipse", it, ":new-york.eclipse:runEclipse")
+  registerDelegateTask("testMultilang", it, ":multilang.test:test")
+
+  // new-york.eclipse
 }
 
 fun Project.tasksWithIncludedBuild(name: String, fn: TaskContainer.(IncludedBuild) -> Unit) {
